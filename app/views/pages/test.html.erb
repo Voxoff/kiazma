@@ -1,26 +1,408 @@
-<div class="docScroller">
-   <!-- <svg class="ribbon1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 884.7 656.4"  preserveAspectRatio="xMinYMid slice">
-      <title>ribbon</title>
-      <path d="M51.2,0.2s97,202.6,31.6,202.6S1,272,38.8,272s158.3-87.4,159.1,24.4-152,267.7,57.5,158.3,373.2-188.2,315.8-74.8S808.5,600,808.5,600l94,20.8V503s-278.9-4.3-286.7-86.9S719,274.3,617.5,282.2,215.2,486.5,204.2,442.4c0,0,100-220-3.9-216.9s-186,47.6-171.6,22.8c16.1-27.7,26-14.2,60.6-34.6,44.9-26.5,22.1-85,22.1-85S106.6,77.6,58.5,0,51.2,0.2,51.2.2Z" transform="translate(-18.3 35)"/>
-    </svg> -->
-    <div class="page one">
-      <div class="inside">
-        <h1>Measuring programming progress &#8658;</h1>
+<% content_for :title do %>
+  Kitchup
+<% end %>
+<div style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('image_path('homepage-banner-real.jpg')'); background-position: 50% 50%" class="banner">
+  <div class="banner-content">
+    <div class="mobile-header">
+      <h1 class="mb-4">The place for kitchen space</h1>
+    </div>
+    <div class="desktop-header d-flex justify-content">
+      <div class="media-test">
+        <h1 class="neg-btm-marg">The place for  </h1>
+        <div class="type-box">
+          <h1 class="mb-4" id="banner-typed-text"></h1>
+        </div>
       </div>
     </div>
-    <div class="page two">
-      <div class="inside">
-        <h1>By lines of code</h1>
-      </div>
+    <!-- On all screens except mobile -->
+    <div class="search-bar d-flex">
+      <% if false %>
+      <%= simple_form_for :kitchen, url: kitchens_path, html: { class: "d-flex searchform form-control-group", id: "homesearch"}, method: :get do |f| %>
+        <%= f.input :search, label: false, wrapper: false, input_html: { class: "form-control-searchbar mt-2" }, type: "text", placeholder: "Where are you looking? E.g. Battersea"%>
+        <button type="submit" class="search-button"><i class="fas fa-search"></i><span class="mob-hide">  Search</span></button>
+      <% end %>
+      <% end %>
+      <script>
+        document.getElementById('kitchen_search').onkeydown = function(e){
+         if(e.keyCode == 13){
+           document.getElementById("homesearch").submit()
+         }
+      };
+      </script>
+
     </div>
-    <div class="page three">
-      <div class="inside">
-        <h1>Is like measuring aircraft building progress</h1>
-      </div>
+  </div>
+  <% if false %>
+  <%= link_to(@main_kitchen) do %>
+    <div class="featured-kitch-box orange">
+      <% unless @main_kitchen.nil? %>
+      <h5><%= @main_kitchen.name %></h5>
+      <% if @main_kitchen.price_per_day %>
+        <p class="mb-1">£<%= @main_kitchen.price_per_day %> / day</p>
+      <% elsif @main_kitchen.price_per_week %>
+        <p class="mb-1">£<%= @main_kitchen.price_per_week %> / week</p>
+      <% elsif @main_kitchen.price_per_month %>
+        <p class="mb-1">£<%= @main_kitchen.price_per_month %> / month</p>
+      <% end %>
+      <% end %>
     </div>
-    <div class="page four">
-      <div class="inside">
-        <h1>By weight.</h1>
-      </div>
-    </div>
+  <% end %>
+  <% end %>
 </div>
+<!-- ################################################################################################################################ -->
+<!-- How it Works -->
+<!-- ################################################################################################################################ -->
+<h3 class="mb-2 mt-4 bold" style="text-align: center;">How Kitchup works</h3>
+<div class="line-cont">
+  <div class="shrt-line"></div>
+</div>
+<div class="how-it-works-banner">
+  <div class="how-it-works-card">
+    <%= image_tag "loupe.svg" %>
+    <div class="hiw-text-cont">
+      <h3>Find a kitchen</h3>
+      <p>Quick and simple search to find your perfect kitchen space</p>
+    </div>
+  </div>
+  <div class="how-it-works-card">
+    <%= image_tag "002-medical.svg" %>
+    <div class="hiw-text-cont">
+      <h3>View kitchen</h3>
+      <p>Directly message a Kitchen Host to arrange a viewing</p>
+    </div>
+  </div>
+  <div class="how-it-works-card">
+    <%= image_tag "001-chef.svg" %>
+    <div class="hiw-text-cont">
+      <h3>Get cooking</h3>
+      <p>Enjoy use of the kitchen hassle-free. Simple agreements signed online</p>
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################################################ -->
+<!-- Featured Spaces -->
+<!-- ################################################################################################################################ -->
+
+<div class="text-center">
+  <h3 class="mb-2 bold">Explore and book commercial kitchen space</h3>
+  <div class="line-cont">
+    <div class="shrt-line"></div>
+  </div>
+</div>
+<div class="wrapper pt-4 pb-4" id="featured-kitchens">
+  <div class="container pt-4 text-center">
+    <!-- THE TITLE SECTION -->
+    <!-- THE FEATURED SPACES GRID  -->
+    <div class="container">
+      <div class="row">
+        <div class="d-none d-lg-block col-lg-8 no-pad-right">
+           <a href="/kitchens?search=East+London">
+            <div class="featured-space-card east-london" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url(<%= image_path("east_london.jpg", :alt => "East London")%>);">
+              <div class="space-square orange btm-left">
+                <h2>EAST LONDON</h2>
+                <button class="btn-outline-primary btm-left">Browse kitchens</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sx-12 col-md-12 col-lg-4 col-sm-12">
+           <a href="/kitchens/9">
+            <div class="feature-kitchen-card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url('https://res.cloudinary.com/dd5qgkski/image/upload/q_auto:low/v1524753883/jebspxdobdy3y9yoimfg.jpg')";>
+              <h4>First Option Location Studio</h4>
+                <h5>£750 / day</h5>
+            </div>
+          </a>
+           <a href="/kitchens/35">
+            <div class="feature-kitchen-card east-london" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url('https://res.cloudinary.com/dd5qgkski/image/upload/q_auto:low/v1525343011/jrqigtilnpjrva2xrdwc.jpg')";>
+              <h4>Meringue Girls Bakery</h4>
+                <h5>£115 / day</h5>
+            </div>
+          </a>        
+        </div>
+      </div>
+
+
+      <div class="row">
+
+        <div class="col-sx-12 col-md-12 col-lg-4 col-sm-12">
+          <a href="/kitchens/12">
+                      <div class="feature-kitchen-card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url('https://res.cloudinary.com/dd5qgkski/image/upload/q_auto:low/v1528879561/vo8qyy7wvysoushpp1ah.jpg')";>
+                        <h4>Victoria Production Kitchen</h4>
+                          <h5>£1600 / month</h5>
+                      </div>
+                    </a>
+          <a href="/kitchens/33">
+            <div class="feature-kitchen-card east-london" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url('https://res.cloudinary.com/dd5qgkski/image/upload/q_auto:low/v1525261917/uaqi6a7fs9gweds96cxy.jpg')";>
+              <h4>Vauxhall Serviced Kitchen</h4>
+                <h5>£180 / day</h5>
+            </div>
+          </a>
+        </div>
+        <div class="d-none d-lg-block col-lg-8 no-pad-left">
+          <a href="/kitchens?search=Central+London">
+            <div class="featured-space-card east-london" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url(<%= image_path("north_london.jpg", :alt => "Central London")%>);">
+              <div class="space-square blue top-right">
+                <h2>CENTRAL LONDON</h2>
+                <button class="btn-outline-primary btm-left">Browse kitchens</button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-none d-lg-block col-lg-8 no-pad-right">
+           <a href="/kitchens?search=South+London">
+            <div class="featured-space-card east-london" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url(<%= image_path("south_london.jpg", :alt => "East London")%>);">
+              <div class="space-square red btm-right">
+                <h2>SOUTH LONDON</h2>
+                <button class="btn-outline-primary btm-left">Browse kitchens</button>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sx-12 col-md-12 col-lg-4 col-sm-12">
+          <a href="/kitchens/73">
+            <div class="feature-kitchen-card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url('https://res.cloudinary.com/dd5qgkski/image/upload/q_auto:low/v1528880892/ladzokjfsumxtgmazwa6.jpg')";>
+              <h4>Croydon Cold Prep Kitchen</h4>
+                <h5>£1100 / month</h5>
+            </div>
+          </a>
+         <a href="/kitchens/16">
+            <div class="feature-kitchen-card east-london" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 50%), url('https://res.cloudinary.com/dd5qgkski/image/upload/q_auto:low/v1524836764/hbyrd6myogiegylfw72t.jpg')";>
+              <h4>London Cooking Project</h4>
+                <h5>£150 / day</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Search Kitchens Button -->
+    <!-- Manage Featured Kitchens Button -->
+  </div>
+</div>
+
+<!-- ################################################################################################################################ -->
+<!-- Testimonials -->
+<!-- ################################################################################################################################ -->
+<div class="test-carousel" style="background-color: #f9f9f9;">
+  <div class="wrapper test-cont pt-4 pb-4" id="testimonials" >
+    <div class=" pt-4 pb-4 text-center">
+      <!-- Title Section -->
+      <h3 class="cont-header mb-2">Hear from our kitchen community</h3>
+      <div class="line-cont">
+        <div class="shrt-line"></div>
+      </div>
+    </div>
+      <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="new-testimonial">
+              <div class="new-test-info">
+               <div class="test-img"><img class="testimonial-home-avatar" src="https://res.cloudinary.com/dd5qgkski/image/upload/v1524832877/m6hpzkaotkvd50niypn7.jpg" alt="M6hpzkaotkvd50niypn7" />/div>
+                <h3>David</h3>
+                <p>Founder, Smokestak</p>
+              </div>
+              <div class="new-test-test-cont">
+                <div class="top-quote"><%= image_tag "topquote.png", class: "quote" %></div>
+                <div class="new-test-testimonial">
+                  <p>It is very resourceful, having a huge selection of kitchens with the right equipment you need and in the right area. We wanted to find somewhere that was close to our street food operations and our restaurant, and Kitchup helped us find somewhere bang in the middle.</p>
+                </div>
+              <div class="btm-quote"><%= image_tag "btmquote.png", class: "quote" %></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="new-testimonial">
+              <div class="new-test-info">
+               <div class="test-img"><img class="testimonial-home-avatar" src="https://res.cloudinary.com/dd5qgkski/image/upload/v1524832922/wphjcre9erxigdfro6ee.jpg" alt="Wphjcre9erxigdfro6ee" /></div>
+                <h3>Brandt</h3>
+                <p>Co-Founder, Tastehead</p>
+              </div>
+              <div class="new-test-test-cont">
+                <div class="top-quote"><%= image_tag "topquote.png", class: "quote" %></div>
+                <div class="new-test-testimonial">
+                  <p>Great overall experience. Easy to find a space and arrange booking even at short notice. Will definitely use again!</p>                </div>
+              <div class="btm-quote"><%= image_tag "btmquote.png", class: "quote" %></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="new-testimonial">
+              <div class="new-test-info">
+               <div class="test-img"><img class="testimonial-home-avatar" src="https://res.cloudinary.com/dd5qgkski/image/upload/v1524832992/kpwaixpoarkhofqmlnmk.jpg" alt="Kpwaixpoarkhofqmlnmk" /></div>
+                <h3>Justine</h3>
+                <p>Founder, Justbite</p>
+                              </div>
+              <div class="new-test-test-cont">
+                <div class="top-quote"><%= image_tag "topquote.png", class: "quote" %></div>
+                <div class="new-test-testimonial">
+                  <p>As a Kitchen Host, we have so far found Kitchup to be extremely efficient and easy to communicate with. The whole process has been great. We would (and will) highly recommend Kitchup as a service.</p>
+                                  </div>
+              <div class="btm-quote"><%= image_tag "btmquote.png", class: "quote" %></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="new-testimonial">
+              <div class="new-test-info">
+                <div class="test-img"><img class="testimonial-home-avatar" src="https://res.cloudinary.com/dd5qgkski/image/upload/v1524833065/v4odjihmd8nk1pqcqks7.jpg" alt="V4odjihmd8nk1pqcqks7" /></div>
+                <h3>Stephanie</h3>
+                <p>Co-Founder, Pollen + Grace</p>
+              </div>
+              <div class="new-test-test-cont">
+                <div class="top-quote"><%= image_tag "topquote.png", class: "quote" %></div>
+                <div class="new-test-testimonial">
+                  <p>Kitchup found us an interim kitchen which really helped us get through a tricky time and allowed our business to keep running and growing. You really went above and beyond to help us out when we needed it, thank you!</p>                </div>
+              <div class="btm-quote"><%= image_tag "btmquote.png", class: "quote" %></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="new-testimonial">
+              <div class="new-test-info">
+                <div class="test-img"><img class="testimonial-home-avatar" src="https://res.cloudinary.com/dd5qgkski/image/upload/v1524833302/ymilvnlcfastrmgxfyly.jpg" alt="Ymilvnlcfastrmgxfyly" /></div>
+                <h3>Ben</h3>
+                <p>Founder, Ministry of Startups</p>
+              </div>
+              <div class="new-test-test-cont">
+                <div class="top-quote"><%= image_tag "topquote.png", class: "quote" %></div>
+                <div class="new-test-testimonial">
+                  <p>Since joining Kitchup as a Kitchen Host, we now have many food start-ups who make full use of our commercial kitchens. It’s great to see their businesses grow, whilst supporting us with the additional income.</p>                </div>
+              <div class="btm-quote"><%= image_tag "btmquote.png", class: "quote" %></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <%= image_tag "goleft.png", class: "arrows goleft" %>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <%= image_tag "goright.png", class: "arrows goright" %>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################################################ -->
+<!-- Community -->
+<!-- ################################################################################################################################ -->
+<div class="wrapper pt-4 pb-4" id="blog">
+  <div class="container pt-4 pb-4 text-center">
+    <!-- Title Section -->
+    <h3 class="mb-2 bold">Life in the kitchen</h3>
+    <div class="line-cont">
+      <div class="shrt-line"></div>
+    </div>
+    <!-- 3 Blog Columns -->
+    <div class="row mt-4 blog-box">
+      <div class="col-lg">
+        <a href="https://medium.com/@kitchupuk/7-things-you-need-to-know-about-hiring-kitchen-space-6ccfa12b6de6" target="_blank">
+          <div style="background-image: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02) ), url('<%= asset_path('Homepage-blog-guidance.jpg') %>');" class="community-card"></div>
+          <div class="corner-box orange">
+            <h4>Guidance</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg blog-box">
+        <a href="https://medium.com/@kitchupuk/luminary-bakery-5bc70b4421e7" target="_blank">
+          <div style="background-image: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02) ), url('<%= asset_path('Homepage-blog-inspiration.jpg') %>');" class="community-card"></div>
+          <div class="corner-box blue">
+            <h4>Inspiration</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg blog-box">
+        <a href="https://medium.com/@kitchupuk/green-kitchen-standard-a-sustainable-approach-to-catering-969015b4fd1" target="_blank">
+          <div style="background-image: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.02) ), url('<%= asset_path('Homepage-blog-news.jpg') %>');" class="community-card"></div>
+          <div class="corner-box red">
+            <h4>News</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Go to blog button -->
+    <div class="mt-4">
+      <%= link_to "Read more", "https://medium.com/@kitchupuk", class: "btn btn-outline-primary", target: "_blank" %>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- LINKS TO EXTERNAL REVIEWS -->
+
+<div class="media-bar mb-4 d-none d-md-block">
+  <div class="row aligned pt-3">
+    <a href="https://startups.co.uk/twin-entrepreneurs/ ">
+      <%= image_tag "startups.png", :class => "media-link"%>
+    </a>
+    <a href="https://bdaily.co.uk/articles/2017/12/13/managed-marketplace-kitchup-smashes-its-100k-crowdfunding-target">
+      <%= image_tag "bdaily.png", :class => "media-link"%>
+    </a>
+    <a href="https://couriermedia.co/hiscox/">
+      <%= image_tag "courier.png", :class => "media-link"%>
+    </a>
+    <a href="http://foodtalk.co.uk/blog/2017/08/meet-the-winners-2017 ">
+      <%= image_tag "foodtalk.png", :class => "media-link"%>
+    </a>
+    <a href="http://www.foodserviceequipmentjournal.com/pioneering-kitchen-rental-firm-attracts-112-investors-smashes-funding-target/ ">
+        <%= image_tag "foodservice.png", :class => "media-link"%>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- ################################################################################################################################ -->
+<!-- JAVASCRIPT -->
+<!-- ################################################################################################################################ -->
+<script>
+  // Need to add event listener to the actual box.
+  document.addEventListener("keypress", (e) => {
+    if (e.keyCode == 13){
+      document.getElementById("homesearch").submit();
+    }
+  })
+
+  // document.addEventListener("click", myfunction)
+
+  // function myfunction() {
+  //   console.log("hey")
+  //   document.addEventListener("keypress", (e) => {
+  //     if (e.keyCode == 13){
+  //       document.getElementById("homesearch").submit();
+  //     }
+  //   })
+  // }
+const firstTab = document.getElementById("FirstTab");
+const firsttab = document.getElementById("firsttab")
+const tablinks = document.getElementsByClassName("tablinks");
+
+// Tabs Selector
+// Display first tab initially:
+firstTab.style.display = "block";
+firsttab.className += " active";
+// Change Navbar Title as Tabs Change
+tablinks[0].addEventListener("click", () => {
+  // document.querySelector(".navbar-brand").innerHTML = "Add an expense"
+})
+tablinks[1].addEventListener("click", () => {
+  // document.querySelector(".navbar-brand").innerHTML = "Settle an expense"
+})
+// Change Displayed Tab as Tabs Change
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    tablinks = document.getElementsByClassName("tablinks");
+  }
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
