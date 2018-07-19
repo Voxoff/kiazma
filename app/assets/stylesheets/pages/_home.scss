@@ -1,1 +1,101 @@
-// Specific CSS for your home-page
+// // Specific CSS for your home-page
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Satisfy', cursive;
+  color: black;
+}
+
+.docScroller {
+  background-size: 400px 400px;
+  width: 100vw;
+  height: 100vh;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: mandatory;
+  /* older spec implementation */
+  scroll-snap-destination: 0% 100%;
+  scroll-snap-points-x: repeat(100%);
+}
+
+.page {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+}
+
+.inside {
+  transition: all 0.5s ease-out;
+  .title {
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 3vw;
+    padding: 8px 0 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #fcb5b5;
+  }
+   h2{
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+  }
+}
+
+.banner-content{
+  width:100%;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25));
+  padding-bottom: 30px;
+  position:relative;
+}
+
+.btn-title {
+  color: #777777;
+  border: 1px solid #999999;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+.btn-title:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fcb5b5;
+}
+
+.link {
+  padding: 20px;
+  height:100%;
+  width: 15%;
+  position: absolute;
+  left: 85%;
+  top:0%;
+  background-color:#111;
+  opacity: 0.7;
+  background: linear-gradient(to right, inherit, rgba(0,0,0,1));
+}
+
+i{
+  padding: 25px;
+}
+
+
+.one {
+}
+
+.two {
+}
+
+.three {
+}
+
+.four {
+}
