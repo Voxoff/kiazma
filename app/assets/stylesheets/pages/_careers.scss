@@ -1,0 +1,453 @@
+.career-card {
+  height: 23vw;
+  background-color: white;
+  padding: 20px;
+  margin: 20px 42px;
+  display: flex;
+  position: relative;
+}
+
+.career-card-image {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 100%;
+}
+.career-card-text {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.career-card-header {
+  margin-top: 10px;
+  h2 {
+    font-weight: bold;
+    color: $blue;
+    margin: 0;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+
+.career-card-body {
+  font-size: 24px;
+}
+
+.career-card-food {
+  text-align: end;
+  border-bottom: 3px solid white;
+  h6 {
+    font-size: 22px;
+    color: $blue;
+    font-weight: bold;
+  }
+  p {
+    font-size: 26px;
+  }
+}
+
+.career-card-food:after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  border: 1.5px solid $blue;
+  bottom: -3px;
+  right: 15px;
+}
+
+.join-kitchup {
+  padding: 50px 100px;
+  border-bottom: solid 0.5px #bebebe;
+  h1 {
+    font-weight: bold;
+    color: $blue;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: justify;
+    font-size: 22.5px;
+    a {
+      color: $red;
+      font-weight: bold;
+      &:hover {
+        color: darken($red, 20%)
+      }
+    }
+  }
+}
+.investors {
+  padding: 50px 97px;
+  border-bottom: solid 0.5px #bebebe;
+  h3 {
+    font-size: 45px;
+    font-family: 'Avenir-Heavy'
+  }
+}
+.inv-card {
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  border: 1px solid rgba(190,190,190,0.7);
+  border-radius: 4px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.inv-text {
+  padding-left: 20px;
+  text-align: left;
+  h5 {
+    color: $blue;
+    font-weight: 600;
+  }
+}
+.investor-img {
+  height: 20vw;
+  width: 20vw;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#seedr {
+  border: 1px solid rgba(190,190,190,0.7)
+}
+
+.career-row {
+  height: 100%;
+}
+
+@media (max-width: 1600px) {
+  .career-card {
+    height: auto;
+    & h2 {
+      font-size: 27px;
+    }
+    & p {
+      font-size: 20px;
+    }
+  }
+  .career-card-body {
+    p {
+      font-size: 20px;
+    }
+  }
+  .career-card-food {
+    p {
+      font-size: 22px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+  }
+  .career-card-image {
+    height: 285px;
+  }
+  .career-card-food:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    border: 1.5px solid $blue;
+    bottom: -3px;
+    right: 15px;
+  }
+  .static-blurb {
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+
+}
+
+@media (max-width: 1242px) {
+  .career-card {
+    height: auto;
+    & h2 {
+      font-size: 25px;
+    }
+    & p {
+      font-size: 18px;
+    }
+  }
+  .career-card-body {
+    p {
+      font-size: 18px;
+    }
+  }
+  .career-card-food {
+    p {
+      font-size: 20px;
+    }
+    h6 {
+      font-size: 18px;
+    }
+  }
+  .career-card-image {
+    height: 285px;
+  }
+  .career-card-food:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    border: 1.5px solid $blue;
+    bottom: -3px;
+    right: 15px;
+  }
+  .static-blurb {
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+
+}
+
+@media (max-width: 1061px) {
+  .career-card {
+    height: auto;
+    & h2 {
+      font-size: 30px;
+    }
+    & p {
+      font-size: 23px;
+    }
+  }
+  .career-card-body {
+    p {
+      font-size: 15px;
+    }
+  }
+  .career-card-food {
+    p {
+      font-size: 17px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+  }
+  .career-card-image {
+    height: 285px;
+  }
+  .career-card-food:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    border: 1.5px solid $blue;
+    bottom: -3px;
+    right: 15px;
+  }
+  .static-blurb {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  .career-card {
+    height: auto;
+    padding: 15px;
+    margin: 20px 0px;
+    & h2 {
+      font-size: 23px;
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .career-card-body {
+    p {
+      font-size: 15px;
+    }
+  }
+  .career-card-food {
+    p {
+      font-size: 17px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+  }
+  .career-card-image {
+    height: 285px;
+  }
+  .career-card-food:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1.5px solid $blue;
+    bottom: -3px;
+    right: 0px;
+  }
+  .static-blurb {
+    h2 {
+      font-size: 27px;
+    }
+    p {
+      font-size: 22px;
+    }
+  }
+  .investors {
+    padding: 50px 20px;
+    border-bottom: solid 0.5px #bebebe;
+    h3 {
+      font-size: 31px;
+      font-family: 'Avenir-Heavy'
+    }
+  }
+  .investor-img {
+    height: 32vw;
+    width: 32vw;
+  }
+  .join-kitchup {
+    padding: 45px 15px;
+    & h1 {
+      font-size: 31px;
+    }
+  }
+}
+
+@media (max-width: 488px) {
+ .career-card {
+  height: auto;
+  padding: 15px;
+  margin: 20px 0px;
+  & h2 {
+    font-size: 23px;
+  }
+  & p {
+    font-size: 15px;
+  }
+}
+.career-card-body {
+  p {
+    font-size: 15px;
+  }
+}
+.career-card-food {
+  p {
+    font-size: 17px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+}
+.career-card-image {
+  height: 200px;
+}
+.career-card-food:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border: 1.5px solid $blue;
+  bottom: -3px;
+  right: 0px;
+}
+.static-blurb {
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+.investors {
+  padding: 50px 20px;
+  border-bottom: solid 0.5px #bebebe;
+  h3 {
+    font-size: 31px;
+    font-family: 'Avenir-Heavy'
+  }
+}
+.investor-img {
+  height: 32vw;
+  width: 32vw;
+}
+.join-kitchup {
+  padding: 45px 15px;
+  & h1 {
+    font-size: 31px;
+  }
+}
+}
+
+@media (max-width: 360px) {
+  .career-card {
+    height: auto;
+    padding: 15px;
+    margin: 20px 0px;
+    & h2 {
+      font-size: 23px;
+    }
+    & p {
+      font-size: 15px;
+    }
+  }
+  .career-card-body {
+    p {
+      font-size: 15px;
+    }
+  }
+  .career-card-food {
+    p {
+      font-size: 17px;
+    }
+    h6 {
+      font-size: 15px;
+    }
+  }
+  .career-card-image {
+    height: 200px;
+  }
+  .career-card-food:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border: 1.5px solid $blue;
+    bottom: -3px;
+    right: 0px;
+  }
+  .static-blurb {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .investors {
+    padding: 50px 20px;
+    border-bottom: solid 0.5px #bebebe;
+    h3 {
+      font-size: 31px;
+      font-family: 'Avenir-Heavy'
+    }
+  }
+  .investor-img {
+    height: 32vw;
+    width: 32vw;
+  }
+  .join-kitchup {
+    padding: 45px 15px;
+    & h1 {
+      font-size: 31px;
+    }
+  }
+}
+
+
+
+
+
+
+
+

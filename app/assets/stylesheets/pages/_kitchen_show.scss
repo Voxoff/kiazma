@@ -1,0 +1,260 @@
+.costs-card {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.name-box {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: -200px;
+  left: 5vw;
+  color: white;
+  h3 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+  }
+  .box-price {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}
+.equip-card {
+  height: 80px;
+}
+.equip-col {
+  padding: 5px !important;
+}
+.border-right {
+  border-right: 1px solid #bebebe;
+}
+.border {
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+}
+.jc {
+  display: flex;
+  justify-content: center;
+}
+.btm-bord {
+  border-bottom: 1px solid #bebebe;
+}
+.bebe {
+  color: #bebebe;
+}
+.pad-right {
+  padding-right: 10px;
+}
+.xtrapad {
+  justify-content: left !important;
+  padding: 20px 0px !important;
+}
+.action-panel {
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+@media (max-width: 450px) {
+  .name-box {
+    top: -100px;
+    height: 100px;
+    width: 100%;
+    left: 0px;
+  }
+  .top100 {
+    top: -100px !important;
+  }
+}
+.show-all {
+  color: $red;
+  font-weight: bold;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.max-height-270 {
+  max-height: 180px;
+  overflow: hidden;
+}
+.max-height-100 {
+  max-height: 90px;
+  overflow: hidden;
+}
+.no-max-height {
+  max-height: 2000px !important;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h5 {
+    margin: 0px 10px 0px 0px;
+  }
+  border-bottom: 1px solid #bebebe;
+  padding: 10px 0px;
+}
+@media (max-width: 768px) {
+  .info-panel {
+    order: 1;
+  }
+  .action-panel {
+    border: none;
+  }
+}
+@media (max-width: 1100px) {
+  .border {
+    p {
+      font-size: 12px;
+    }
+  }
+}
+.top100 {
+  position: relative;
+  top: -200px;
+  padding: 3vw 5vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+
+.name-bar {
+  min-height: 120px;
+  width: 100vw;
+  padding: 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+.reject {
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid $blue;
+  padding: 20px;
+  margin: 40px;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -20px;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  bottom: -80px !important;
+}
+.carousel-control-next {
+  position: absolute;
+  bottom: -80px !important;
+}
+.reject-head {
+  color: $blue;
+}
+.kitchen-name {
+  color: $blue;
+}
+.availability {
+  padding-bottom: 30px;
+  h5 {
+    line-height: 1.5;
+  }
+  p {
+    color: gray;
+    line-height: 1;
+  }
+}
+.profile-pic {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+#review-cont {
+  max-height: 700px;
+  overflow: hidden;
+}
+.host-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.host {
+  h5 {
+    line-height: 1.5;
+  }
+}
+.address {
+  padding-top: 15px;
+  padding-left: px;
+  line-height: 0.5;
+  color: rgba(0,0,0,0.5);
+}
+.blue {
+  color: $blue;
+}
+
+.review-card {
+  padding: 10px;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 2px;
+}
+.equip_icons {
+  height: 50px;
+  width: 50px;
+}
+.review-card-1 {
+  margin: 10px 20px 0px 10px;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1px #bebebe;
+}
+.review-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.review-user-info {
+  h4 {
+    font-weight: bold;
+    color: $blue;
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
+}
+.review-user {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.yellow {
+  color: #f5a623;
+}
+.review-comment {
+  padding: 10px;
+  p {
+    margin: 0px;
+  }
+}
+// #show{
+//   display: flex;
+//   justify-content: space-around;
+//   align-item: center;
+//   position: relative !important;
+//   bottom: 0 !important;
+//   left: 0 !important;
+//   margin-top: 20px;
+//   .fa-star{
+//     transform: scale(2);
+//   }
+//   .far {
+//     transform: scale(2) !important;
+//   }
+// }

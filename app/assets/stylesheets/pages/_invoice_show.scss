@@ -1,47 +1,3 @@
-// Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
-
-// External libraries
-@import "bootstrap";
-// @import "bootstrap-sprockets";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-
-// Your CSS partials
-@import "layouts/index";
-@import "components/index";
-@import "pages/index";
-
-// Font
-@font-face {
-  font-family: 'AvenirLTStd-Book';
-  src: font-url('36221D_0_0.eot');
-  src: font-url('36221D_0_0.eot?#iefix') format('embedded-opentype'),
-  font-url('36221D_0_0.woff2') format('woff2'),
-  font-url('36221D_0_0.woff') format('woff'),
-  font-url('36221D_0_0.ttf') format('truetype');
-}
-
-.empty-text {
-  width: 800px;
-}
-
-.seperator {
-  margin: 0 5px;
-}
-
-.first-checkbox {
-  margin-top: 2.5rem;
-}
-
-.help-block {
-  color: $red;
-  font-weight: bold;
-}
-
-
 .invoice-container {
   position: relative;
   height: 2000px;
@@ -56,6 +12,21 @@
   }
 
 }
+@media print {
+  .inv-image {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
+  .payment-advice {
+    display: block;
+    page-break-before: always;
+  }
+  .download {
+    display: none;
+  }
+}
+
 .pay-cont {
   padding-left: 60px;
 }
@@ -155,28 +126,15 @@
   width: 100%;
   padding-top: 50px;
 }
+.payment-dest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
 .payment-info {
   margin-top: 50px;
-}
-
-.manage-photos {
-}
-
-.photo-delete {
-  margin-bottom: 10px
-}
-
-.photo-delete-img {
-  height: 200px;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  border-radius: 2px;
-}
-
-.password-change-form {
-  width: 30vw;
-  min-width: 300px;
-  margin: 100px auto;
 }
 

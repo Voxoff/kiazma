@@ -1,0 +1,16 @@
+@media (min-width: 1000px) {
+  .viewing-edit-image {
+    height: calc(100vh - 70px);
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .viewing-edit-form {
+    max-width: 500px;
+  }
+}
+
+.viewing-edit-form {
+  padding: 0 40px;
+}

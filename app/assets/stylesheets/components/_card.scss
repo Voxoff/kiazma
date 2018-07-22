@@ -1,0 +1,339 @@
+// FRONT PAGE
+.featured-space-card {
+  height: 398px;
+  margin: 1rem 0 0 0;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 2px;
+  position: relative;
+}
+.bmarg {
+  margin-bottom: 120px;
+}
+.space-square {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  padding: 10px;
+  h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 70px;
+  }
+  .btn-outline-primary {
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+  }
+}
+.btm-left {
+  bottom: 0px;
+  left: 0px;
+}
+.btm-right {
+  bottom: 0px;
+  right: 0px;
+}
+.top-right {
+  top: 0px;
+  right: 0px;
+}
+.no-pad-right {
+  padding-right: 0px;
+}
+.no-pad-left {
+  padding-left: 0px;
+}
+.featured-space-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.03);
+}
+
+.feature-kitchen-card {
+  height: 190px;
+  margin-top: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  h4  {
+    position: absolute;
+    bottom: 25px;
+    left: 15px;
+    weight: heavy;
+  } h5 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    weight: lighter;
+    color: rgba(255,255,255,0.8);
+    margin: 0px;
+  }
+}
+
+.feature-kitchen-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.03);
+}
+
+.feature-kitchen-card-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.community-card {
+  height: 370px;
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.community-card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: scale(1.03);
+}
+
+.featured-space-card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+}
+
+.profile-information-card {
+  margin: 1rem 0;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  // border: 1px solid rgba(0,0,0,0.2)
+  // background-color: rgba(0,0,0,0.05);
+}
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+  background: black;
+  opacity: 0;
+}
+
+.review-card {
+  margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: rgba(0,0,0,0.01);
+}
+
+// CARDS FOR THE INDEX PAGE
+.results-card {
+  // This should not be fixed at least without setting a certain length to a decription sidplayed on kitchen cards
+  min-height: 370px;
+  margin: 25px;
+  flex-direction: column;
+  border: 1px strong black;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  a {
+    color: $gray;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .image{
+    height: 250px;
+    width: 100%;
+    min-width: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .information{
+    h3{
+      color: $blue;
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+  }
+  &:hover{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.cards-container{
+  height: calc(100vh - 109px - 70px + 1rem);
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+// EQUIPMENT CARD
+.equipment-card {
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.category-card {
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.equipment-highlighted {
+  outline: 4px solid $orange;
+  outline-offset: -4px;
+}
+
+// BOOKING CARDS
+.booking-card{
+  display:flex;
+  border: 1px solid rgba(0,0,0,0.23);
+  border-width: 1px 0 0 0;
+  // box-shadow: 0 1px 30x rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 160px;
+  margin: 0 30px;
+  position: relative;
+  align-items: center;
+}
+
+.booking-card:last-child{
+  border-width: 1px 0;
+  margin-bottom: 30px;
+}
+
+.booking-card:first-child{
+  margin-top: 30px;
+}
+
+.booking-default-image{
+  margin-left: 5px;
+  margin-right: 10px;
+
+}
+
+.edit-link{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.date{
+  margin: 0 auto;
+}
+.days {
+  height: 50px;
+}
+// Host Dashboard
+
+.booking-request-card {
+  margin: 1rem 0;
+  color: $gray;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  // height: 350px;
+}
+.fwrp {
+
+}
+.request-title {
+  margin-top: -30px;
+}
+.request-content {
+  padding: 0 10%;
+}
+
+.request-content-days {
+  height: 260px;
+}
+
+.booking-request-card-content-right {
+  border-left: 1px solid #E5E5E5;
+}
+.booking-request-card-content-left {
+  min-width: 40%;
+}
+@media (max-width: 1400px) {
+  .booking-request-card-content-left {
+    width: 100%;
+  }
+  .fwrp {
+    flex-wrap: wrap;
+  }
+  .booking-request-card-content-right {
+    flex-grow: 1;
+  }
+}
+.dashboard-card {
+  color: $gray;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  height: 250px;
+  padding: 10px 30px;
+  border-radius: 2px;
+}
+
+.dashboard-bookings {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

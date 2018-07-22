@@ -1,0 +1,115 @@
+.shrt-line {
+  background-color: $blue;
+  height: 3px;
+  width: 100px;
+}
+.line-cont {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cont-header {
+  font-family: AvenirLTStd-Book;
+  font-size: 45px;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+@media (max-width: 750px) {
+  .cont-header {
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 570px) {
+  .cont-header {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .new-test-testimonial {
+    padding: -20px;
+  }
+  .arrows {
+    display:none;
+  }
+}
+.new-testimonial {
+  margin: 20px 5%;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  max-width: 700px;
+}
+@media (min-width: 570px) {
+  .new-testimonial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  .new-test-info {
+  padding: 20px 0px 20px 40px;
+  }
+}
+.test-carousel {
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+.new-test-info {
+  text-align: center;
+  h3 {
+    margin-top: 10px;
+    color: $blue;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.13;
+  }
+}
+.quote {
+  height: 34px;
+  width: 42px;
+}
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.new-test-testimonial {
+  p {
+    margin-top: 5px;
+    margin-bottom: 0px !important;
+  }
+  padding: 0px 30px;
+}
+.top-quote {
+  display: flex;
+  justify-content: left;
+}
+.btm-quote {
+  display: flex;
+  justify-content: left;
+  flex-direction: row-reverse;
+}
+.new-test-test-cont {
+  padding: 30px;
+  max-width: 600px;
+}
+.arrows {
+  height: 50px;
+  width: 50px;
+}
+.goleft {
+  margin-right: 150px;
+}
+.goright {
+  margin-left: 150px;
+}
+
+
+
+
+
+
+
+
+
+

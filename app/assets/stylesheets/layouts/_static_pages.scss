@@ -1,0 +1,340 @@
+.about-img {
+  width: 100%;
+}
+.about-cards {
+  padding: 5vw 7vw;
+}
+.about-card {
+  border: solid 1px #bebebe;
+  border-radius: 3px;
+  margin-bottom: 2vw;
+}
+.pad {
+  padding: 3vw 4vw 1vw 4vw;
+}
+.btms-pad {
+  padding: 0vw 4vw 3vw 4vw;
+}
+.about-card-buttons {
+  display: inline-block;
+}
+.white {
+  color: white !important;
+}
+.short {
+  height: 4vw;
+  min-height: 20px;
+  border-radius: 4px;
+  padding: 0px 15px !important;
+  padding-top: 3px !important;
+  margin-right: 10px;
+  p {
+    font-size: 1.5vw;
+    margin: 0px !important;
+  }
+}
+.positive-purpose {
+  border-top: solid 0.5px #bebebe;
+  border-bottom: solid 0.5px #bebebe;
+  padding: 3vw 0px;
+  margin-bottom: 20px;
+}
+.pos {
+  text-align: right;
+  padding: 10px;
+  width: 40vw;
+  h1 {
+    color:white;
+    font-size: 3vw;
+    margin: 0px;
+  }
+}
+.find-out-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid 1px #bebebe;
+  padding-bottom: 20px;
+  h1 {
+    font-size: 3vw;
+    color: rgba(0,0,0,0.5);
+    margin: 0px;
+    padding-right: 15px;
+  }
+}
+.pos-text {
+  padding: 2vw 7vw;
+  h2 {
+    font-weight: lighter;
+    font-size: 2.6vw;
+    color: #4a4a4a !important;
+  }
+  p {
+    font-size: 1.6vw;
+    margin: 0px;
+    color: rgba(0,0,0,0.6) !important;
+  }
+}
+.about-us {
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.15);
+  padding: 50px 70px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.about-us-text {
+  h4 {
+    font-size: 2.7vw;
+    color: $blue;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+  h6 {
+    font-size: 1.7vw;
+    color: #4a4a4a;
+    font-weight: lighter;
+  }
+}
+.about-us-img {
+
+}
+.about-kitchen {
+  height: 35vw;
+  width: 35vw;
+}
+
+.static-banner-wrapper {
+  background-color: white;
+  padding-bottom: 50px;
+}
+.static-banner-em {
+  background-color: $blue;
+  width: 40vw;
+  position: relative;
+  left: 55vw;
+  top: 550px;
+  padding: 20px 30px;
+  h4 {
+    color: white;
+    font-family: georgia;
+    font-style: italic;
+    line-height: 1.39;
+    font-size: 2vw;
+    margin: 0px;
+  }
+}
+.static-banner {
+  height: 657px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .static-banner-title {
+    width: 240px;
+    &.blue {
+      background-color: $blue;
+    }
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    height:250px;
+    padding: 15px;
+    h2 {
+      font-weight: 900;
+      width: 75%;
+      color: white;
+    }
+    p {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      font-size: 26px;
+    }
+  }
+}
+.neg-top-marg {
+  margin-top: -30px;
+  margin-left: 7vw;
+  h3 {
+    font-size: 65px;
+    font-weight: 700;
+  }
+}
+.neg-top-marg-two {
+  margin-top: 30px;
+  margin-left: 7vw;
+  margin-bottom: -30px;
+  h3 {
+    font-size: 45px;
+    font-weight: 700;
+  }
+}
+
+.static-blurb {
+  margin-top: 20px;
+  h2 {
+    color: $blue;
+    font-size: 4vmin;
+    margin-bottom: 30px;
+    letter-spacing: 0.1px;
+  }
+  p {
+    font-size: 3vmin;
+  }
+  padding: 10px 92px;
+}
+
+.static-card-cont {
+  background-color: #f9f9f9;
+  padding: 50px 50px;
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1206px) {
+  .static-card-cont {
+    padding: 50px 20px !important;
+  }
+  .about-us {
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .about-us-text {
+    h4 {
+      font-size: 22px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+  }
+  .short {
+    height: auto;
+    padding-top: 3px !important;
+    & p {
+      font-size: 20px;
+    }
+  }
+  .pos {
+   & h1 {
+     font-size: 25px
+   }
+ }
+ .pos-text {
+   & h2 {
+    font-size: 20px
+  }
+  & p {
+    font-size: 20px
+  }
+}
+.find-out-more {
+ & h1 {
+  font-size: 20px;
+}
+}
+}
+
+@media (max-width: 660px) {
+  .about-us-text {
+    h4 {
+      font-size: 18px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+  }
+  .short {
+    height: auto;
+    padding-top: 3px !important;
+    & p {
+      font-size: 16px;
+    }
+  }
+    .pos {
+   & h1 {
+     font-size: 20px
+   }
+ }
+ .pos-text {
+   & h2 {
+    font-size: 15px
+  }
+  & p {
+    font-size: 15px
+  }
+}
+.find-out-more {
+ & h1 {
+  font-size: 15px;
+}
+}
+}
+
+@media (max-width: 570px) {
+  .static-banner-title {
+    left: 0px !important;
+    width: 100% !important;
+    height: 120px !important;
+  }
+  .static-banner {
+    height: 390px !important;
+  }
+  .static-blurb {
+    padding: 10px 30px !important;
+  }
+  .static-banner-em {
+    top: 330px;
+    padding: 10px 10px;
+    width: 50vw;
+    left: 45vw;
+    h4 {
+      font-size: 3vw;
+    }
+  }
+  .neg-top-marg {
+    margin-left: 10px;
+    h3 {
+      font-size: 32px;
+    }
+  }
+  .neg-top-marg-two {
+    margin-left: 10px;
+    h3 {
+      font-size: 24px;
+      margin: 20px;
+    }
+  }
+  .about-us {
+    padding: 20px 7vw !important;
+  }
+  .about-us-text {
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+  .about-card {
+    margin-bottom: 22px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .about-us-text {
+    h4 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 14px;
+    }
+  }
+  .short {
+    height: auto;
+    padding-top: 3px !important;
+    & p {
+      font-size: 12px;
+    }
+  }
+  .about-card {
+    margin-bottom: 22px;
+  }
+}

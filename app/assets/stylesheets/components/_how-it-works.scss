@@ -1,0 +1,26 @@
+.how-it-works-tabs {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid $blue;
+  background: white;
+  color: $blue;
+  cursor: pointer;
+}
+
+.how-it-works-tabs.active {
+  height: 50px;
+  width: 50px;
+  border-radius: 0px;
+  border: 0px;
+  background-image: image-url("hob-logo-blue.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.how-it-works-tab-content {
+  min-height: 120px;
+}
+

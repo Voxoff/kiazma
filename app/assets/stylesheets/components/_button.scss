@@ -1,0 +1,55 @@
+.color-white {
+  color: white;
+}
+
+.color-primary {
+  color: $blue;
+}
+// For the index page but effects all buttons
+.wishme{
+  .fa {
+    transform: scale(1.1);
+    transition: 0.25s ease-in;
+  }
+}
+
+.wishme:hover {
+  background-color: white !important;
+  .fa {
+    // color: lighten($blue, 10%);
+    // transition: 0.5s ease-in;
+    // color: $blue;
+  }
+  .far {
+    transform: scale(1.1);
+    transition: 0.25s ease-in;
+  }
+}
+
+.wishlist-btn a:focus{
+  box-shadow: none !important;
+}
+
+.wishme2{
+  // margin-top: 20px;
+  transform: scale(1.1);
+}
+
+.wishme2:hover {
+  background-color: white !important;
+  .fa {
+    // color: lighten($blue, 10%);
+    // transition: 0.5s ease-in;
+    // color: $blue;
+  }
+}
+
+.wishlist-btn a:focus{
+  box-shadow: none !important;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}

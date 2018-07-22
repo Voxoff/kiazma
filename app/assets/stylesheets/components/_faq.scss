@@ -1,0 +1,14 @@
+.faq-collapse {
+  white-space: normal;
+  text-align: start;
+}
+
+@media (max-width: 560px) {
+  .m-5 {
+    margin: 2rem !important;
+  }
+  .p-5 {
+    padding: 2rem !important;
+
+  }
+}

@@ -1,0 +1,52 @@
+@media (min-width: 1000px) {
+  .new-booking-image {
+    height: calc(100vh - 70px);
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .new-booking-form {
+    max-width: 500px;
+  }
+}
+
+.new-booking-form {
+  padding: 0 40px;
+}
+
+#booking_own_contract_false {
+  margin-left: 20px;
+}
+
+#requires_food_handling_certificate {
+  margin: 25px 0;
+}
+
+.day-list {
+  width: 140px;
+}
+@media(max-width: 993px) {
+  .mb-btm-bord {
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+  }
+}
+
+.empty-bookings {
+  position: relative
+}
+
+.bookings-button {
+  position: absolute;
+  left: 47%;
+  bottom: 35%;
+}
+
+@media(max-width: 400px) {
+  .bookings-button {
+    bottom: 25%;
+    left: 35%
+  }
+}
+
+

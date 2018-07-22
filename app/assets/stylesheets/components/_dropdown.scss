@@ -1,0 +1,13 @@
+.dropdown{
+  padding: 0px 15px 0px 15px;
+}
+.dropdown-wrapper{
+  margin-right: 8px;
+  // Stops default margin, so allowing vertical alignment to work.
+  margin-bottom: 0px;
+}
+
+.dropdowns{
+  display: flex;
+  align-items: center;
+}

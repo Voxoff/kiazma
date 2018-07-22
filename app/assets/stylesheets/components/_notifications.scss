@@ -1,0 +1,48 @@
+.notif-alert{
+}
+
+.bell{
+  margin-right: 25px;
+  padding: 0 10px;
+  color: $gray;
+}
+
+#bell{
+  font-family: $headers-font
+}
+
+.orange-bell{
+  color: $orange
+}
+
+.mymessages{
+  display: inline-block;
+  padding-left:4px;
+}
+
+.notification-circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    background: #F5A623;
+    border: 2px solid #f5a62366;
+    color: #fff;
+    text-align: center;
+    font: 16px Arial, sans-serif;
+    margin-top: -4px !important;
+    line-height: 1px;
+}
+.active .notification-circle {
+  color: white;
+  padding: 0px 7px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.tab-class {
+  margin-top: 4px;
+}

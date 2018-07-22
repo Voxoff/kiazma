@@ -1,0 +1,10 @@
+// Necessary to stop jumps, please improve if you can
+// https://stackoverflow.com/questions/16648020/twitter-bootstrap-100-height-accordion-jump
+// Other solutinos seem to be messing with padding and margin so accordion doenst screwup height calc.
+.no-transition {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
+}

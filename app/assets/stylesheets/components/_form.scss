@@ -1,0 +1,87 @@
+.simple_form div.input {
+  margin-bottom: 10px;
+  clear: both; /* Required for Webkit, but not for Gecko */
+  color: #CCCCCC;
+}
+
+.spacer {
+  height: 300px;
+}
+
+.justified {
+ display: flex;
+ align-items: center;
+}
+.cust-row {
+ display: flex;
+ justify-content: space-around;
+ color: $blue;
+ text-align: center;
+ width: auto;
+ padding-bottom: 30px;
+}
+.center-image {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.white-bg {
+ background-color: white;
+}
+.max-width {
+ max-width: 400px;
+}
+.btm-pad {
+ padding-bottom: 30px;
+}
+.form-inputs {
+ width: 100%;
+}
+
+.login-form {
+ display: flex;
+ justify-content: space-around;
+ padding: 15px;
+ max-width: 400px;
+}
+
+
+.list-group-horizontal {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  &>.list-group-item {
+    // border: 1px solid grey;
+    display: table-cell;
+    float: none;
+    text-align: center;
+    width: 1%;
+    border-radius: 0;
+    &:first-child {
+      border-bottom-left-radius: 3px;
+    }
+    &:last-child {
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
+.name-fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kitchen_requires_photographer {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20%;
+}
+
+.fa-plus-circle {
+  color: $blue;
+  &:hover {
+    cursor: pointer;
+    color: darken($blue, 10%)
+  }
+}

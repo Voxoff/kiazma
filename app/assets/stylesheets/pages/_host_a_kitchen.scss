@@ -1,0 +1,291 @@
+.host-sub-banner {
+  padding: 30px 60px;
+  text-align: center;
+  h1, h4 {
+    font-weight: bold;
+  }
+  h1 {
+    margin-bottom: 70px;
+  }
+}
+.advertise {
+  padding: 0px 20px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-family: AvenirLTStd-Book;
+    font-size: 35px;
+    font-weight: 900;
+    color: #4a4a4a;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+.grey-back {
+  background-color:  #f9f9f9;
+}
+.static-card-container {
+  padding: 40px 130px;
+}
+@media (max-width: 570px) {
+  .HIW-top-card-text {
+    h3 {
+      font-size: 24px !important;
+    }
+    p {
+      font-size: 18px !important;
+    }
+    .HIW-image {
+      height: 100px !important;
+      width: 100px !important;
+    }
+  }
+  .advertise {
+    h3 {
+      font-size: 24px !important;
+      font-weight: 600 !important;
+    }
+  }
+  .HIW-image {
+  height: 100px !important;
+  width: 100px !important;
+  }
+  .HIW-icon {
+    height: 120px !important;
+  }
+  .HIW-icon-2 {
+    height: 120px !important;
+  }
+}
+@media (min-width: 1220px) {
+  .HIW-top-card {
+    display: flex;
+    justify-content: center;
+  }
+  .HIW-top-card-text {
+    width: 70% !important;
+  }
+  .HIW-icon {
+    height: inherit !important;
+    width: 30% !important;
+    margin-left: 40px;
+  }
+  .HIW-icon-2 {
+    height: inherit !important;
+    width: 30% !important;
+    margin-right: 40px;
+  }
+  #small-scr {
+    display: none;
+  }
+}
+@media (max-width: 1220px) {
+  #big-scr {
+    display: none !important;
+  }
+}
+@media (max-width: 1000px) {
+  .static-card-container {
+    padding: 40px 40px !important;
+  }
+}
+.HIW-top-card {
+  margin: 20px 0px;
+  padding: 20px;
+  height: auto;
+  border-radius: 4px;
+  position: relative;
+  background-color: white !important;
+  border: 1px solid #bebebe;
+  min-height: 300px;
+}
+.HIW-icon {
+  width: fill;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HIW-icon-2 {
+  width: fill;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HIW-top-card-text {
+  width: 100%;
+  h3 {
+    color: rgba(0,0,0,0.7);
+    font-weight: 800;
+    font-size: 32px;
+  }
+  p {
+    margin-top: 10px;
+    color: rgba(0,0,0,0.5);
+    font-weight: lighter;
+    font-size: 28px;
+  }
+}
+.HIW-image {
+  height: 200px;
+  width: 200px;
+}
+.left {
+  margin-right: 100px;
+}
+.right {
+  margin-left: 100px;
+}
+.card-icon {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
+}
+.got_a_space {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #bebebe;
+  h3 {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: lighter;
+    opacity: 0.8;
+  }
+}
+.line {
+  width: 1440px;
+  height: 3px;
+  border: solid 1px #bebebe;
+}
+.btn-kitchup {
+  margin: 0px 20px;
+  width: 150px;
+  height: 40px;
+  background: linear-gradient(to right, $blue , $trans-blue);
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: "AvenirLTStd-Book";
+  &:hover {
+    background: white;
+    border: 1px solid $blue;
+    color: $blue;
+  }
+
+}
+.lower-cont {
+  padding:30px 130px;
+  text-align: center;
+}
+
+@media(max-width: 650px) {
+  .lower-cont {
+    padding: 30px 30px;
+  }
+  .simple {
+    padding: 0px 10% !important;
+  }
+  .question {
+    padding: 0px 10% 20px 10%!important;
+  }
+}
+.simple {
+  margin-top: 30px;
+  word-wrap: break-word;
+  width: 100%;
+  padding: 0px 25%;
+  text-align: center;
+}
+.trusted-header {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  max-width: 648px;
+}
+.question {
+  margin-top: -10px;
+  word-wrap: break-word;
+  width: 100%;
+  padding: 0px 25% 20px 25%;
+  text-align: center;
+  border-bottom: 1px solid #bebebe;
+  a {
+      color: $red;
+    }
+}
+.host-info-cards {
+  border-radius: 4px;
+  border: 1px solid #bebebe;
+  margin: 15px 0px;
+}
+
+
+.host-info {
+  padding: 20px 40px;
+  text-align: left;
+  h5 {
+  line-height: 1.7;
+  font-weight: lighter;
+  color: #4a4a4a;
+  height: auto;
+  display: flex;
+  align-items: center;
+  }
+}
+.top {
+  height: 52px;
+  color: white;
+  font-family: "AvenirLTStd-Book";
+  display: flex;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 16px;
+   h4 {
+    margin-top: 0px !important;
+  }
+}
+.red {
+  background-color: $red;
+}
+.blue {
+  background-color: $blue;
+}
+.orange {
+  background-color: $orange;
+}
+.lighter {
+  font-weight: lighter;
+}
+.trusted {
+  display: flex;
+  justify-content: center;
+  padding: 0px 30px;
+}
+.logos {
+  width: 100%;
+  padding: 20px 5%;
+}
+
+
+
+@media(min-width: 1400px) {
+  .host-info {
+    min-height: 155px;
+  }
+}
+
+
+
+
+
+
+
+
+

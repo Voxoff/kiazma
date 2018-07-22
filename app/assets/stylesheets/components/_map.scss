@@ -1,0 +1,12 @@
+.map{
+  padding: 1rem;
+  height: calc(100vh - 109px - 70px + 2rem);
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.index-map {
+  width: 100%;
+  height: calc(100vh - 109px - 70px);
+  border-radius: 4px;
+}

@@ -1,0 +1,44 @@
+.mailing-bar-logo {
+  height: 60px;
+}
+.mailing-bar {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.mailing-button {
+  background: linear-gradient(to right, #538CD4, #8AB9F4);
+  height: 81px;
+  width: 200px;
+  margin-left: -20px;
+}
+.mailing-bar {
+  font-family: AvenirLTStd-Book;
+  border-radius: 4px 0px 0px 4px;
+
+}
+.mailing-form {
+  width: 400px;
+  height: 81px;
+  font-size: 24px;
+}
+.bar-cont {
+  display:flex;
+  justify-content: space-around;
+}
+@media (max-width: 610px) {
+  .mailing-button {
+    width: 100px;
+    font-size: 12px !important;
+    height: 60px;
+  }
+  .mailing-form {
+    width: 200px;
+    font-size: 12px;
+    height: 60px;
+  }
+  .mailing-bar-logo {
+    height: 40px;
+  }
+}

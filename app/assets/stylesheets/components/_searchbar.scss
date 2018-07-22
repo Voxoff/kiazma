@@ -1,0 +1,118 @@
+.search-button {
+  height: 80px;
+  width: 40%;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  background: linear-gradient(to right, #538CD4, #8AB9F4);
+  color: white;
+  margin-right: -30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 532px) {
+  .search-bar {
+    padding: 10px 5px;
+  }
+}
+.search-bar {
+  background: white;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+.form-group-searchbar {
+  margin: 0 !important;
+  width: 100%;
+}
+
+.form-control-searchbar {
+  width: 100%;
+  height: 60px;
+  border: 0 !important;
+  margin: 0;
+  padding: 0px 10px;
+  box-shadow: 0;
+  outline: 0;
+  transition: all 0;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+@media (max-width: 450px) {
+  .mob-hide {
+    display: none;
+  }
+  .form-control-searchbar {
+    font-size: 0.7rem !important;
+  }
+}
+@media (max-width: 368px) {
+  .form-control-searchbar {
+    font-size: 0.6rem !important;
+  }
+}
+@media (min-width: 450px) {
+  .form-control-searchbar {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 532px) {
+  .form-control-searchbar {
+    padding: 0px;
+  }
+}
+@media (min-width: 650px) {
+  .form-control-searchbar {
+    font-size: 1.1rem !important;
+  }
+}
+.form-group-searchbar:focus {
+  outline: 0 !important;
+  border: 0;
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+}
+.form-group-searchbar:hover {
+  outline: 0 !important;
+  border: 0;
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+}
+.form-control-searchbar:focus {
+  outline: 0 !important;
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+  border: 0;
+}
+.form-control-searchbar:hover {
+  outline: 0 !important;
+  border: 0;
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+}
+
+.searchform {
+  width: 100%;
+}
+
+.flex-grow{
+  flex: 1 0 auto;
+}
+
+.dropdown{
+  padding: 10px;
+}
+
+#data-entry{
+  font-size: 1rem !important;
+  margin-left: 250px;
+}
+
+#submit{
+  width: 60%;
+  margin-right: 100px;
+}

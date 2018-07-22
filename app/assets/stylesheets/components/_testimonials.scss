@@ -1,0 +1,152 @@
+.testimonial {
+  min-height: 200px;
+}
+
+.testimonial-giver {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-giver-info {
+  text-align: left;
+  padding: 40px;
+}
+@media(max-width: 600px) {
+  .testimonial-giver-info {
+    max-width: 180px;
+  }
+}
+
+.testimonial-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 40px;
+}
+
+
+
+.testimonial-home-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin-top: 30px;
+}
+
+.testimonial-show-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.testimonial-show {
+  margin: 20px;
+  width: 460px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-testimonial-text {
+  max-width: 460px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.new-test {
+  border-radius: 4px;
+  border: 1px solid $blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  padding: 5px;
+  p {
+    margin-bottom: 0px;
+  }
+}
+.test-form {
+  width: 600px;
+  border: 1px solid rgba(83,140,212,0.4);
+  padding: 20px;
+  border-radius: 4px;
+  margin: 30px;
+}
+
+.type {
+  color: rgb(83,140,212)
+}
+
+.create {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    background-color:rgb(83,140,212);
+    color: white;
+    border: 1px solid rgb(83,140,212);
+    display: inline-block;
+
+    font-family:AvenirLTStd-Book;
+    font-size:16px;
+    padding:5px 18px;
+    text-decoration:none;
+    margin: 20px;
+}.create:hover {
+    color: rgb(83,140,212);
+    background-color: white;
+
+}.create:active {
+    position:relative;
+    top:1px;
+}
+
+.destroy {
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    background-color:$red;
+    color: white;
+    border: 1px solid $red;
+    display: inline-block;
+    font-family:AvenirLTStd-Book;
+    font-size:16px;
+    padding:5px 18px;
+    text-decoration:none;
+    margin: 20px;
+}.destroy:hover {
+    color: $red;
+    background-color: white;
+
+}.destroy:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

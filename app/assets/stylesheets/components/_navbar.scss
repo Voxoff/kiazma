@@ -1,16 +1,39 @@
+.white-for-landing-page {
+  color: white !important;
+}
+
 /* Main navbar */
 .navbar-wagon {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  background: transparent;
+  transition: all 0.3s ease;
+  height: 70px;
+  padding: 0px 30px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 500;
+}
+
+.navbar-wagon-white {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
   background: white;
   transition: all 0.3s ease;
   height: 70px;
   padding: 0px 30px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 500;
 }
 
 /* Logo */
+.navbar-wagon-brand:hover {
+  text-decoration: none;
+}
+
 .navbar-wagon-brand img {
   height: 50px;
 }
@@ -37,11 +60,24 @@
 
 /* Navbar link */
 .navbar-wagon-link {
-  color: #616668;
+  color: white;
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: $orange;
+  text-decoration: none;
+}
+/* Navbar link Dark */
+.navbar-wagon-link-dark {
+  color: $gray;
+  font-size: 14px;
+}
+.navbar-wagon-link-dark:hover {
+  color: $orange;
+  text-decoration: none;
+}
+.navbar-wagon-link-dark:focus {
+  color: $orange;
   text-decoration: none;
 }
 
@@ -58,6 +94,7 @@
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
+  margin: 0;
 }
 .navbar-wagon-dropdown-menu li > a:hover {
   background: transparent !important;
@@ -74,4 +111,32 @@
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
+}
+.dropdown-menu {
+  z-index: 25000 !important;
+}
+
+.navbar-logo-title {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.navbar-logo-title:hover {
+  text-decoration: none;
+}
+
+.list-a-kitchen-btn {
+  padding: 0px 15px;
+  background: linear-gradient(to right, #538CD4, #8AB9F4);
+  border-radius: 4px;
+  margin-right: 20px;
+  padding-top: 13px;
+  padding-bottom: 10px;
+}
+
+.list-a-kitchen-btn:hover {
+  background: $hover-blue;
+  color: white;
+}
+.mobile-mailer-placeholder {
+  color: black;
 }
